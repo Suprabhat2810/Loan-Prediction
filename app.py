@@ -4,8 +4,7 @@ import pickle
 
 
 # Loading the model
-with open('s_model.pkl', 'rb') as file:
-   model = pickle.load(file)
+model = pickle.load('s_model.pkl','rb')
 
 img = Image.open('imag.png')
 img = img.resize((156,145))
