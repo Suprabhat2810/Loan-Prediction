@@ -1,5 +1,5 @@
-pickle
+pickle==3.11.5
 scikit-learn
-pandas
-seaborn
-matplotlib
+pandas==2.1.4
+seaborn==0.12.2
+matplotlib==3.8.0
