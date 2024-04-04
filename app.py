@@ -3,6 +3,7 @@ from PIL import Image
 import pickle
 import sklearn
 
+
 # Loading the model
 with open('s_model.pkl', 'rb') as file:
     model = pickle.load(file)
