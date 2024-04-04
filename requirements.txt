@@ -1,5 +1,5 @@
-scikit-learn
 pickle
+scikit-learn
 pandas
 seaborn
 matplotlib
