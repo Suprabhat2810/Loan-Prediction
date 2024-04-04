@@ -1,12 +1,13 @@
 import streamlit as st
 from PIL import Image
 import pickle
+import joblib
 import sklearn
 
 
 # Loading the model
 with open('s_model.pkl', 'rb') as file:
-    model = pickle.load(file)
+    model = joblib.load(file)
 
 img = Image.open('imag.png')
 img = img.resize((156,145))
