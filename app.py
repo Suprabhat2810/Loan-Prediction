@@ -38,7 +38,7 @@ def predict():
    edu_opt = st.selectbox("Education", list(edu_dis.keys()))
    edu = edu_dis[edu_opt]
 
-   emp_dis = {'Yes': 1.0, 'No':0.0}
+   emp_dis = {'Yes': 1, 'No':0}
    emp_opt = st.selectbox("Self-Employed", list(emp_dis.keys()))
    emp = emp_dis[emp_opt]
 
@@ -47,7 +47,7 @@ def predict():
    l_amt = st.number_input("Loan Amount")
    l_dr = st.number_input('Loan Amount Term')
    c_his = st.slider("Credit History", 0.0, 1.0, step=0.1)
-   p_area = st.slider("Property Area", 0, 1000, step=1)
+   p_area = st.slider("Property Area", 0, 100, step=1)
 
    # Prediction Button
    if st.button("Check Loan Eligibility"):
